@@ -3,19 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 10</title>
+    <title>Reservas de viajes</title>
 </head>
 <body>
-    <label for="character">Choose your character:</label><br></br>
-    <select name="character" id="character">
-
-    <option value="Goku">Goku</option>
-    <option value="Vegeta">Vegeta</option>
-     <option value="Gohan" selected>Gohan</option>
+    <form>
+        <fieldset>
 
 
+        <legend>Datos Personales:</legend>
+        <label for="Name">Nombre:</label><br>
+        <input type="text" name="Name" id="Name"><br></br>
+        <label for="CE">Correo Electrónico:</label><br>
+        <input placeholder="example@email.com" type="email" name="CE" id="CE"><br><br>
+        <label for="NT">Teléfono:</label><br>
+        <input type="number" name="NT" id="NT"><br><br>
+        
+        </fieldset>
+    
+    </form>
 
-    </select>
+    <form>
+        <fieldset>
 
+            <legend>Datos del Viaje:</legend>
+            <label for="P">Acompañantes:</label><br>
+            <input step="" min="1" max="5" type="number" name="P" id="P"><br><br>
+            <label for="LDO">Lugar de Origen:</label><br>
+            <input readonly value="El Salvador" type="text" name="LDO" id="LDO"><br><br>
+            <label for="Destino">Lugar de Destino:</label><br>
+            <select name="Destino" id="Destino">
+
+                <option value="Lauterbrunnen">Lauterbrunnen</option>
+                <option value="Florencia">Florencia</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Venecia">Venecia</option>
+
+
+
+            </select>
+
+        </fieldset>
+
+    </form>
 </body>
 </html>
