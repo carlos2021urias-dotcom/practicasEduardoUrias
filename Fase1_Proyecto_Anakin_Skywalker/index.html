@@ -8,24 +8,25 @@
     <link rel="icon" type="img/jpg" href="Collage.img/icono.jpg">
 </head>
 <body>
-    <header>
+    <header class="header">
 
         
-        <h1>Anakin Skywalker</h1>
+        <h1 class="titulo">Anakin Skywalker</h1>
+        <h3>The Fallen Angel</h3>
 
-        <nav>
+        <nav class="nav">
 
-            <ul>
+            <ul class="menu">
 
-                <li><a href="#s1" >Historia</a></li>
+                <li><a class="link" href="#s1" >Historia</a></li>
 
-                <li><a href="#s2" >Información</a></li>
+                <li><a class="link" href="#s2" >Información</a></li>
 
-                <li><a href="#s3" >Ficha técnica</a></li>
+                <li><a class="link" href="#s3" >Ficha técnica</a></li>
 
-                <li><a href="#s4" >Registro de fans</a></li>
+                <li><a class="link" href="#s4" >Registro de fans</a></li>
 
-                <li><a href="#s5" >Galería</a></li>
+                <li><a class="link" href="#s5" >Galería</a></li>
 
             </ul>
 
@@ -33,22 +34,22 @@
 
 </header> 
 
-<main>
+<main class="contenedor">
 
-    <section>
+    <section class="historia">
 
-        <h2 id="s1">Historia</h2>
-        <img src="Collage.img/anakin.jpg" width="200" height="200">
-        <p>Anakin Skywalker es el icónico personaje central de la saga Star Wars, nacido esclavo en Tatooine alrededor del 41 ABY.<br> Descubierto por Qui-Gon Jinn como el "Elegido" profetizado para equilibrar la Fuerza, se une a los Jedi, entrena con Obi-Wan Kenobi,<br> se enamora de Padmé Amidala y lucha en las Guerras Clon como héroe. Manipulado por Palpatine (Darth Sidious), su miedo a perder a Padmé <br>lo lleva a traicionar a los Jedi en la Orden 66, convertirse en Darth Vader, masacrar a sus antiguos aliados y servir al Imperio hasta su redención al salvar a su hijo Luke en El Retorno del Jedi.</p>
+        <h2 id="s1" class="subtitulo">Historia</h2>
+        <img class="img" src="Collage.img/anakin.jpg" alt="Anakin" width="200" height="200">
+        <p class="texto">Anakin Skywalker es el icónico personaje central de la saga Star Wars, nacido esclavo en Tatooine alrededor del 41 ABY.<br> Descubierto por Qui-Gon Jinn como el "Elegido" profetizado para equilibrar la Fuerza, se une a los Jedi, entrena con Obi-Wan Kenobi,<br> se enamora de Padmé Amidala y lucha en las Guerras Clon como héroe. Manipulado por Palpatine (Darth Sidious), su miedo a perder a Padmé <br>lo lleva a traicionar a los Jedi en la Orden 66, convertirse en Darth Vader, masacrar a sus antiguos aliados y servir al Imperio hasta su redención al salvar a su hijo Luke en El Retorno del Jedi.</p>
 
 
         <a target="_blank" href="https://starwars.fandom.com/wiki/Anakin_Skywalker">Más Información acerca del personaje</a>
     </section>
 
-    <section>
+    <section class="seccion">
 
-        <h2 id="s2">Información</h2>
-        <h3>Características</h3>
+        <h2 id="s2" class="subtitulo">Información</h2>
+        <h3><strong>Características</strong></h3>
 
             <ul>
 
@@ -72,9 +73,9 @@
 
     </section>
 
-    <section>
+    <section class="ficha">
 
-        <h2 id="s3">Ficha técnica</h2>
+        <h2 id="s3" class="subtitulo">Ficha técnica</h2>
 
         <table style="width: 100%;">
     
@@ -117,16 +118,21 @@
 
     </section>
 
-    <section>
+    <section class="formulario">
 
-        <h2 id="s4">Registro de fans</h2>
+        <h2 id="s4" class="subtitulo">Registro de fans</h2>
         <fieldset>
 
-            <legend>Unete a nuestra comunidad</legend>
+            <legend class="centrado">Unete a nuestra comunidad</legend>
+            <form action="Index.html" class="formulario-contenido">
             <label for="Nom">Nombre:</label><br>
             <input type="text" name="Nom" id="Nom"><br><br>
             <label for="CE">Correo Electrónico:</label><br>
             <input placeholder="example@gmail.com" type="email" name="CE" id="CE"><br><br>
+            <label for="Side">De qué lado estas?</label>
+            <select name="Side" id="Side">
+                <option value="lado oscuro">Lado Oscuro</option>
+                <option value="lado de la fuerza">Lado de la fuerza</option>
             <input type="submit" value="Enviar">
 
 
@@ -134,9 +140,9 @@
         
     </section>
 
-    <section>
+    <section class="galeria">
 
-        <h2 id="s5">Galería</h2>
+        <h2 id="s5" class="subtitulo">Galería</h2>
 
         <div class="Galería">
 

@@ -1,53 +1,50 @@
-
-/* IMPORTACIÓN DE FUENTES (Google Fonts)*/
 @import 
-url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Special+Elite&display=swap')
+url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap')
 ;
-/* RESET BÁSICO (Primeros estilos) */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-/* ESTILOS GENERALES (Selector de etiqueta)*/
+
 body {
 font-family: 'Inter', sans-serif;
 background-image: url(../img/street.jpg);
 background-size: contain;
-color: #333;
+color: #ffffff;
 line-height: 1.6;
+background-image: url(https://wallpapers-clan.com/wp-content/uploads/2024/12/star-wars-darth-vader-dark-side-desktop-wallpaper-preview.jpg);
 }
 
-/* =========================
-HEADER Y NAVEGACIÓN
-========================= */
 header {
-background-color: #2b270b81;
-color: #fff;
-padding: 10px;
-position: sticky; /* Posicionamiento sticky */
+background-color: #00000081;
+color: #00eeff;
+padding: 5px;
+position: sticky; 
 top: 0;
-z-index: 1000; /*Este elemento estará muy por encima de cualquier otro*/
-display: flex;
+z-index: 1000; 
 flex-direction: row;
 align-items: center;
 justify-content: space-evenly; 
+text-align: center;
 }
 
 .titulo {
-font-family: 'Special+Elite', cursive; /* Fuente tipo máquina de escribir */
+font-family: 'Cinzel', serif; 
 letter-spacing: 5px;
 text-align: center;
 margin-bottom: 10px;
 max-height:max-content;
 font-size: 1.4rem;
 }
-/* Flexbox para menú */
+
 .menu {
 display: flex;
 justify-content: center;
 list-style: none;
-gap: 20px;
+gap: 30px;
 font-size: 0.9rem;
 }
 
@@ -59,38 +56,38 @@ border-radius: 5px;
 transition: 0.3s;
 }
 .link:hover {
-background-color: #c0b73d;
+background-color: #ff0000;
 }
 
-/*MAIN Y SECCIONES */
+
 main {
 width: 85%;
 max-width: 1200px;
-margin: auto; /*mismo margen a la izquierda y derecha*/
+margin: auto; 
+
 }
 section {
-margin: 40px 0; /*Separar cada sección*/
+margin: 40px 0; 
 padding: 20px;
-background-color: #ffffffd5;
+background-color: #000000d5;
 border-radius: 10px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-/* ID selector */
+
 #s1, #s2, #s3, #s4, #s5 {
 margin-bottom: 15px;
-color: #584343;
+color: #00ccff;
 text-align: center;
 }
 
-.imgpeq {
-border: solid white 8px;
-margin: 35px 0;
-float: right; /*que el texto envuelva la imagen*/
+.img {
+border: solid rgb(0, 0, 0) 4px;
+margin: -10px 0;
+float: right; 
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+border-radius: 20px;
 }
-/* =========================
-LISTAS
-========================= */
+
 ul, ol {
 margin-left: 20px;
 }
@@ -99,30 +96,26 @@ li {
 margin-bottom: 8px;
 }
 
-/* =========================
-TABLA (Box model)
-========================= */
+
 .ficha table {
 width: 100%;
 border-collapse: collapse;
 }
 .ficha th, .ficha td {
-border: 1px solid #747474;
+border: 1px solid #016fff;
 padding: 10px;
 }
 .ficha th {
-background-color: #5e5a4b;
+background-color: #1800f1;
 color: white;
 }
 
-/* =========================
-FORMULARIO
-========================= */
+
 .centrado{
 text-align: center;
 }
 form {
-margin-top: 20px;
+margin-top: 10px;
 margin-left: auto;
 margin-right: auto;
 width: 50%;
@@ -135,26 +128,26 @@ border: 1px solid #ccc;
 border-radius: 5px;
 }
 
-/* Botón */
+
 input[type="submit"] {
-background-color: #7e724b;
+background-color: #ff0000;
 color: white;
 border: none;
 cursor: pointer;
 margin-top: 10px;
 }
 input[type="submit"]:hover {
-background-color: #4b3d0c;
+background-color: #0077ff;
 }
 
-/* GALERÍA (Grid + Flexbox alternativo) */
+
 .galeria {
 display: flex;
 flex-direction: column;
 gap: 10px;
 justify-content: center;
 }
-.contenedor-galeria{
+.Galería{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -166,7 +159,7 @@ justify-content: center
 .galeria img {
 width: 30%;
 height: 300px;
-object-fit: cover; /* overflow control */
+object-fit: cover; 
 border-radius: 10px;
 transition: transform 0.3s;
 }
@@ -174,13 +167,26 @@ transition: transform 0.3s;
 transform: scale(1.1);
 }
 
-/* =========================
-FOOTER
-========================= */
+
 footer {
 text-align: center;
 padding: 20px;
 background-color: #000;
 color: white;
 margin-top: 40px;
+}
+
+table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+}
+
+h1, h2, h3{
+    font-family: 'Cinzel', serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    
 }
