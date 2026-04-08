@@ -11,7 +11,6 @@ box-sizing: border-box;
 
 body {
 font-family: 'Inter', sans-serif;
-background-image: url(../img/street.jpg);
 background-size: contain;
 color: #ffffff;
 line-height: 1.6;
@@ -101,6 +100,7 @@ margin-bottom: 8px;
 .ficha table {
 width: 100%;
 border-collapse: collapse;
+text-align: center;
 }
 .ficha th, .ficha td {
 border: 1px solid #016fff;
@@ -141,13 +141,6 @@ input[type="submit"]:hover {
 background-color: #0077ff;
 }
 
-
-.galeria {
-display: flex;
-flex-direction: column;
-gap: 10px;
-justify-content: center;
-}
 .Galería{
 display: flex;
 flex-direction: row;
@@ -157,17 +150,26 @@ align-content: center;
 justify-content: center
 }
 
-.galeria img {
+.galeria img:nth-child(even) {
 width: 30%;
 height: 300px;
 object-fit: cover; 
 border-radius: 10px;
 transition: transform 0.3s;
+border: 3px solid red;
 }
+.galeria img:nth-child(odd) {
+width: 30%;
+height: 300px;
+object-fit: cover; 
+border-radius: 10px;
+transition: transform 0.3s;
+border: 3px solid blue;
+}
+
 .galeria img:hover {
 transform: scale(1.1);
 }
-
 
 footer {
 text-align: center;
@@ -177,11 +179,6 @@ color: white;
 margin-top: 40px;
 }
 
-table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            text-align: center;
-}
 
 h1, h2, h3{
     font-family: 'Cinzel', serif;
