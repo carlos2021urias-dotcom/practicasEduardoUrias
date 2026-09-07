@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .primario{
+            background-color: greenyellow;
+        }
+        .secundario{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="btn" onclick="saludar()">Saludar</button>
+
+    <div id="cajita" class="primario">Hola gente bonita</div>
+    <script>
+
+        let boton = document.getElementById("btn")
+        boton.addEventListener("click", saludar)
+        function saludar(){
+            alert("Saludito ✌️ ")
+        }
+
+        let caja = document.getElementById("cajita");
+        caja.addEventListener("mouseover", color);
+
+        function color() {
+            document.getElementById("cajita").classList.toogle("primario");
+            document.getElementById("cajita").classList.toogle("secundario");
+        }
+    </script>
+</body>
+</html>
